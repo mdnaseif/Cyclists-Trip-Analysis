@@ -1,0 +1,5 @@
+/*Find Number of Trip per Hour in "spring" season*/
+select COUNT(id) as Hours_N
+from Cyclistic..dat
+where (CAST(start_at as time) between '11:00:00' and '11:59:59') and month_n in (3,4,5)
+

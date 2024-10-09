@@ -1,0 +1,21 @@
+select count(ride_id) as count_no,count(ride_id),day_n
+from Cyclistic..test1
+where cus_type = 'casual'
+group by day_n
+
+select count(ride_id) as count_no,day_n
+from Cyclistic..test1
+where cus_type = 'member'
+group by day_n
+
+select sum(DATEDIFF(minute,start , end_)) as count_no,day_n
+from Cyclistic..test1
+where cus_type = 'member'
+group by day_n 
+order by count_no desc
+
+select sum(DATEDIFF(minute,start , end_)) as count_no,day_n
+from Cyclistic..test1
+where cus_type = 'casual'
+group by day_n 
+order by count_no desc

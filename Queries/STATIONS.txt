@@ -1,0 +1,9 @@
+select count(start_station_n) as whoi, start_station_n
+from Cyclistic..dat
+group by start_station_n
+order by count(start_station_n) desc
+
+select count(end_station_n) as whoi, end_station_n
+from Cyclistic..dat
+group by end_station_n
+order by count(end_station_n) desc

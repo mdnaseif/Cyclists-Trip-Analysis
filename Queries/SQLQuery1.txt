@@ -1,0 +1,36 @@
+select (datediff(MINUTE, start,end_)) as time,ride_id,cycle
+from Cyclistic..test1
+where cus_type =  'member';
+
+
+select count(cycle),cus_type
+from Cyclistic..test1
+where cycle = 'classic_bike'
+group by cus_type
+
+select count(cycle),cus_type
+from Cyclistic..test1
+where cycle = 'electric_bike'
+group by cus_type
+
+select count(cycle),cus_type
+from Cyclistic..test1
+where cycle = 'docked_bike' 
+group by cus_type
+
+select ((cast((count(ride_id))as float))/1054)*100,cus_type
+from Cyclistic..test1
+group by cus_type
+
+
+select avg(DATEDIFF(minute,start,end_)),cus_type
+from Cyclistic..test1
+group by cus_type
+
+select round(cast((DATEDIFF(MINUTE,start,end_)) as decimal)/60 , 2) as h,cus_type,ride_id
+from Cyclistic..test1
+where cus_type = 'casual' 
+
+select DATEDIFF(MINUTE,start,end_)
+from Cyclistic..test1
+where ride_id = '3EDE3E3EBD7C1240'

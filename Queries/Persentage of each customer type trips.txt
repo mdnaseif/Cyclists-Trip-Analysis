@@ -1,0 +1,9 @@
+/* To find the percentage of each customer type trips for January */
+
+select cast(count(id) as float) / (select cast( count(id)as float) from Cyclistic..dat where month_n = 12) * 100
+from Cyclistic..dat
+where month_n = 12 and cus_type = 'member'
+
+select cast(count(id) as float) / (select cast( count(id)as float) from Cyclistic..dat where month_n = 12) * 100
+from Cyclistic..dat
+where month_n = 12 and cus_type = 'casual'

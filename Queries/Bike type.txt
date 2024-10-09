@@ -1,0 +1,7 @@
+/*To Know the favorit bike type fpr each type of customer*/
+
+
+SELECT CAST(COUNT(ID)AS FLOAT)/(SELECT CAST(COUNT(ID)AS FLOAT) FROM Cyclistic..DAT WHERE cus_type = 'casual'), cycle_type
+FROM Cyclistic..DAT
+where cus_type = 'casual'
+group by cycle_type

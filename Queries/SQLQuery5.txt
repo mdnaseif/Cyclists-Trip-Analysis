@@ -1,0 +1,7 @@
+select cast(COUNT(id)as float)/137482*100 from Cyclistic..dat where cus_type = 'member' and month_n = 9
+
+select cast(COUNT(id)as float)/1017102*100 from Cyclistic..dat where cus_type = 'member' and month_n = 9
+
+select count(id) as trips, cus_type,month_n from Cyclistic..dat
+group by cus_type , month_n
+order by month_n asc

@@ -1,0 +1,39 @@
+select COUNT(ride_id) as tewlf
+from Cyclistic..test1
+where CAST(start as time) between '12:00:00' and '12:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '13:00:00' and '13:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '14:00:00' and '14:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '15:00:00' and '15:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '16:00:00' and '16:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '17:00:00' and '17:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '18:00:00' and '18:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '19:00:00' and '19:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '20:00:00' and '20:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '22:00:00' and '23:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '04:00:00' and '04:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '05:00:00' and '05:59:59'
+select COUNT(ride_id)
+from Cyclistic..test1 
+where CAST(start as time) between '06:00:00' and '06:59:59'
