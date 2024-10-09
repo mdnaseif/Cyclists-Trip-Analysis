@@ -33,7 +33,7 @@ The analysis focused on several key aspects:
 
 ## Tools Used
 - Excel: For initial data editing and cleaning
-- Programming: To connect various software tools
+- Python: To connect various software tools
 - Tableau: For building and sharing visualizations
 - MSSQL: For storing and manipulating data
 
@@ -57,7 +57,6 @@ The project includes several visualizations to represent the findings:
 
 ## Contact Information
 - Name: MD, NASSIF
-- Email: nasef2002@hotmail.com
-- Phone: +966590244069
+- Email: naseif2002@gmail.com
 
 For more information about this project or to discuss potential collaborations, please feel free to reach out.
